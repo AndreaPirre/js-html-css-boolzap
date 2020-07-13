@@ -31,6 +31,7 @@
 
 }
 
+/* app */
 .container_app {
     z-index: 3;
     width: 90%;
@@ -41,8 +42,47 @@
     display: flex;
 }
 
+/* parte sinistra della app chat */
 .app_left {
     width: 30%;
     height: 100%;
     background-color: pink;
+    display: flex;
+}
+
+/* barra top della parte sinistra di chat */
+.app_left_top {
+    width: 100%;
+    height: 80px;
+    background-color: #eaeaea;
+    border-right: 1px solid lightgrey;
+
+}
+
+/* parte destra della app chat */
+.app_right {
+    width: 70%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.app_right_top {
+    width: 100%;
+    height: 80px;
+    background-color: #eaeaea;
+}
+
+.app_sfondo {
+    width: 100%;
+    height: calc(100% - 160px);
+    background-color: #000;
+}
+
+.app_right_barraInput {
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+    align-content: flex-end;
 }
