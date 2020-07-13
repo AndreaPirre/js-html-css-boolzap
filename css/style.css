@@ -15,8 +15,8 @@
 /* barra verde dietro */
 .barra_retro_top {
     width: 100%;
-    height: 120px;
-    background-color: #009588;
+    height: 150px;
+    background-color: #2cbda5;
     position: fixed;
     z-index: 2;
 
@@ -26,7 +26,7 @@
 .sfondo_retro {
     width: 100%;
     height: 100vh;
-    background-color: #d9dbd6;
+    background-color: #dddbd1;
     z-index: 1;
 
 }
@@ -35,9 +35,8 @@
 .container_app {
     z-index: 3;
     width: 90%;
-    height: 90%;
-    margin: 2.5% 0;
-    background-color: red;
+    height: 95%;
+    margin: 1% 0;
     position: absolute;
     display: flex;
 }
@@ -54,8 +53,15 @@
 .app_left_top {
     width: 100%;
     height: 80px;
-    background-color: #eaeaea;
+    background-color: #ededed;
     border-right: 1px solid lightgrey;
+    display: flex;
+}
+
+#img_profilo {
+    width: 15%;
+    align-self: center;
+    margin-left: 10px;
 
 }
 
@@ -63,7 +69,6 @@
 .app_right {
     width: 70%;
     height: 100%;
-    background-color: green;
     display: flex;
     flex-direction: column;
 }
@@ -71,18 +76,41 @@
 .app_right_top {
     width: 100%;
     height: 80px;
-    background-color: #eaeaea;
+    background-color: #ededed;
 }
 
 .app_sfondo {
     width: 100%;
     height: calc(100% - 160px);
-    background-color: #000;
+    background-image: url("../img/sfondo.png");
+    background-size: auto;
 }
 
 .app_right_barraInput {
     width: 100%;
     height: 80px;
-    background-color: yellow;
-    align-content: flex-end;
+    background-color: #ededed;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+.smile {
+    font-size: 25px;
+    color: grey;
+    align-self: center;
+}
+
+#barra_text {
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.send {font-size: 25px;
+color: grey;
+align-self: center;
 }
