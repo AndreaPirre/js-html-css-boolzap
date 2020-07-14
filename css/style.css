@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-
-/* contenitore generale */
-.container {
+body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    position: relative;
+    background-color: #dddbd1;
 }
 
 /* barra verde dietro */
@@ -19,26 +18,17 @@
     background-color: #2cbda5;
     position: fixed;
     z-index: 2;
-
 }
 
-/* sfondo generico retro */
-.sfondo_retro {
-    width: 100%;
-    height: 100vh;
-    background-color: #dddbd1;
-    z-index: 1;
-
-}
 
 /* app */
 .container_app {
     z-index: 3;
     width: 90%;
     height: 95%;
-    margin: 1% 0;
-    position: absolute;
+    margin: auto;
     display: flex;
+
 }
 
 /* parte sinistra della app chat */
@@ -47,6 +37,8 @@
     height: 100%;
     background-color: pink;
     display: flex;
+    flex-direction: column;
+    border-right: 2px solid lightgrey;
 }
 
 /* barra top della parte sinistra di chat */
@@ -54,7 +46,6 @@
     width: 100%;
     height: 80px;
     background-color: #ededed;
-    border-right: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
 }
@@ -82,6 +73,44 @@
 .puntini, .puntini2 {
     padding-right: 10px;
 }
+/* parte di chat a sinistra */
+.app_left_chat_contatti {
+    width: 100%;
+    display: flex;
+}
+
+/* contatti singoli in chat e nogtifica azzurra */
+.contatto_chat {
+    width: 100%;
+    height: 80px;
+    background-color: #8edafc;
+    display: flex;
+}
+
+/* icona notifica su sfon do azzurro */
+.notifica {
+    color: #8edafc;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    align-self: center;
+    margin-left: 20px;
+}
+/* messaggio accanto all'icona di notifica */
+.msg_notifiche {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 15px;
+    line-height: 16px;
+}
+
+.sub_msg {
+    color: grey;
+    text-decoration: underline;
+}
+
+
 
 /* parte destra della app chat */
 .app_right {
@@ -99,10 +128,24 @@
     justify-content: space-between;
 }
 
+.app_right_top_Profilo {
+
+
+    align-self: center;
+    justify-content: flex-start;
+}
+
 #img_profilo_chat {
-    width: 6%;
+    width: 60px;
     align-self: center;
     margin-left: 10px;
+
+}
+
+.nome_profilo, .accesso {
+    align-self: center;
+    margin-left: 10px;
+
 }
 
 .icone_right {
