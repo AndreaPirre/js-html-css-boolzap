@@ -120,3 +120,170 @@ body {
   margin-left: 16px;
   border-radius: 50%;
 }
+
+.top-menu__left__status {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-menu__left__status a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.left__status__name {
+  color: #000000;
+}
+
+.left__status__last-access {
+  color: grey;
+  font-size: 12px;
+}
+
+/* DIV BARRA NOTIFICHE */
+.left__notification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #8edafc;
+}
+
+.left__notification__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: #8edafc;
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 16px;
+  background: #ffffff;
+}
+
+.left__notification__text {
+  flex-basis: 70%;
+  padding-left: 16px;
+}
+
+.left__notification__text h3 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #413e34;
+}
+
+.left__notification__text a {
+  color: #413e34;
+  font-size: .9em;
+}
+
+/* DIV BARRA RICERCA */
+.left__search-bar {
+  width: 100%;
+  height: 50px;
+  padding: 10px 16px;
+  background-color: #f8f8f8;
+}
+
+.left__search-bar .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.left__search-bar .container a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.container .search-bar__input {
+  font-size: 14px;
+  font-weight: 400;
+  width: 77%;
+  padding-left: 20px;
+  color: #b4b8ba;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.container .search-bar__input::placeholder {
+  color: #b4b8ba;
+}
+
+.lens, .puntini, .clips, .messaggio, .cerchio {
+  color: grey;
+}
+
+/* DIV SINISTRO DELLA LISTA CONVERSAZIONI */
+.left__conversations {
+  width: 100%;
+  height: calc(100% - 70px - 80px - 50px);
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.conversation {
+  display: flex;
+  width: 100%;
+  height: 72px;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.conversation:hover,
+.conversation.active {
+  background-color: #e8e8e8;
+  transition: all 300ms ease-in;
+}
+
+.conversation__image img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+}
+
+.conversation__titles {
+  display: flex;
+  flex-basis: 70%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.conversation__titles .title__name {
+  font-size: 16px;
+  color: #000000;
+}
+
+.conversation__titles .title__message {
+  font-size: 12px;
+  overflow: hidden;
+  padding-top: 3px;
+  white-space: nowrap;
+  color: #9d9d9d;
+}
+
+.conversation__time {
+  display: flex;
+  flex-basis: 10%;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.conversation__time .time__last_message {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-right: 12px;
+  color: #000000;
+}
