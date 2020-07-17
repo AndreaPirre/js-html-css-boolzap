@@ -39,3 +39,84 @@ body {
   height: 100%;
   border-right: 1px solid #e3e3e3;
 }
+
+/* parte alta del contenitore chat */
+.left__top-menu,
+.right__top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #ededed;
+}
+
+.main-container__right {
+  position: relative;
+  width: 75%;
+  min-width: 600px;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 400px;
+  background-color: red;
+}
+
+.left__top-menu,
+.right__top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #ededed;
+}
+
+/* CONTENUTO TOP MENU SINISTRO E DESTRO */
+.left__top-menu__right ul, .cerchio, .messaggio, .puntini,
+.right__top-menu__right ul, .lens, .clips, .puntini {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* distanza icone top */
+.left__top-menu__right ul li,
+.right__top-menu__right ul li {
+  height: 100%;
+  margin-right: 25px;
+}
+
+/* .message_send,
+.right__input-message__icon, */
+.left__top-menu__right ul li a,
+.right__top-menu__right ul li a {
+  color: grey;
+}
+
+.left__top-menu__right ul li a,
+.right__top-menu__right ul li a{
+  height: 100%;
+}
+
+.left__top-menu__left,
+.right__top-menu__left {
+  display: flex;
+  align-items: center;
+}
+
+.convers {
+  display: none;
+  align-items: center;
+}
+
+.convers.active {
+  display: flex;
+}
+
+/* immagine profilo  */
+.image img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+}
