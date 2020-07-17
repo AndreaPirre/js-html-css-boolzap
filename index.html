@@ -18,27 +18,28 @@
                         <div class="left__top-menu">
                             <div class="left__top-menu__left">
                                 <a class="image" href="#"><img src="img/avatar.png" alt="foto profilo utente"></a>
-                                    </div>
-                                        <div class="left__top-menu__right">
-                                            <ul>
-                                                <li>
-                                                  <a href="#">
-                                                    <i class="cerchio fas fa-circle-notch"></i>
-                                                  </a>
-                                                </li>
-                                                <li>
-                                                  <a href="#">
-                                                    <i class="messaggio fas fa-comment-alt"></i>
-                                                  </a>
-                                                </li>
-                                                <li>
-                                                  <a href="#">
-                                                      <i class="puntini fas fa-ellipsis-v"></i>
-                                                  </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                            </div>
+
+                            <div class="left__top-menu__right">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                        <i class="cerchio fas fa-circle-notch"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <i class="messaggio fas fa-comment-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <i class="puntini fas fa-ellipsis-v"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                 <!-- div notifica azzurra -->
                     <div class="left__notification">
@@ -117,7 +118,133 @@
                     </div>
             </div>
 
-        <script type="text/javascript" src="js/script.js">
-        </script>
+
+
+        <!-- CONTENITORE DESTRO -->
+            <div class="main-container__right">
+                <div class="right__top-menu">
+
+                    <div class="right__top-menu__left">
+
+                        <div class="convers active" data-chat="1">
+                            <a class="image" href="#"><img alt="" src="img/avatar2.png"></a>
+                            <div class="top-menu__left__status">
+                                <a class="left__status__name" href="#">Michele</a>
+                                <a class="left__status__last-access" href="#">ultimo accesso oggi alle 14:00</a>
+                            </div>
+                        </div>
+
+
+                        <div class="convers " data-chat="2">
+                            <a class="image" href="#"><img alt="" src="img/avatar3.png"></a>
+                            <div class="top-menu__left__status">
+                                <a class="left__status__name" href="#">Matteo</a>
+                                <a class="left__status__last-access" href="#">ultimo accesso oggi alle 14:00</a>
+                            </div>
+                        </div>
+
+                        <div class="convers " data-chat="3">
+                            <a class="image" href="#"><img alt="" src="img/avatar5.png"></a>
+                            <div class="top-menu__left__status">
+                                <a class="left__status__name" href="#">Jole</a>
+                                <a class="left__status__last-access" href="#">ultimo accesso oggi alle 14:00</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="right__top-menu__right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="lens fas fa-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="clips fas fa-paperclip"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="puntini fas fa-ellipsis-v"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+        <!-- div messaggi chat-->
+            <div class="container-message">
+
+                <div class="right-messages" data-chat="1">
+                    <div class="message__user">
+                        <span class="message_text">Andre!! Ciao!</span>
+                            <div class="message_time">
+                                <span>15:30</span>
+                            </div>
+                    </div>
+                </div>
+
+               <div class="right-messages" data-chat="2">
+
+               </div>
+               <div class="right-messages" data-chat="3">
+
+               </div>
+
+            </div>
+    <!-- TEMPLATE COPIA -->
+            <div id="remove" class="message__me template_me display-none">
+
+                    <div class="message__icon">
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="message_menu">
+                            <li>Info messaggio</li>
+                            <li class="delete-message">Cancella messaggio</li>
+                        </ul>
+                    </div>
+                    <span class="message_text"></span>
+                    <div class="message_time">
+                        <span>18:30</span>
+                    </div>
+            </div>
+
+            <div class="template-user">
+                <div class="message__user template_user display-none">
+                    <div class="message__icon">
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="message_menu">
+                            <li>Info messaggio</li>
+                            <li class="delete-message">Cancella messaggio</li>
+                        </ul>
+                    </div>
+                    <span class="message_text"></span>
+                    <div class="message_time">
+                        <span>18:30</span>
+                    </div>
+                </div>
+            </div>
+
+<!-- bottoni invio-->
+            <div class="right__input-message">
+                <a class="right__input-message__icon" href="#">
+                    <i class="smile far fa-smile"></i>
+                </a>
+                <input class="input_message" placeholder="Scrivi un messaggio" type="text" value="">
+
+                <a class="message_send" href="#">
+
+                    <i class="invio fas fa-paper-plane"></i>
+                    <i class="audio display-none fas fa-microphone"></i>
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
