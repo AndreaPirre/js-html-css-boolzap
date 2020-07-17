@@ -80,6 +80,8 @@ body {
     display: flex;
 }
 
+
+
 /* contatti singoli in chat e nogtifica azzurra */
 .notifica_chat {
     width: 100%;
@@ -91,8 +93,8 @@ body {
 /* icona notifica su sfon do azzurro */
 .notifica {
     color: #8edafc;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 50px;
     align-self: center;
@@ -157,6 +159,13 @@ body {
     justify-content: flex-start;
 }
 
+.contatto_chat:hover,
+.contatto_chat.active {
+  background-color: #e8e8e8;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+
 .foto_profilo {
     width: 20%;
     display: flex;
@@ -180,6 +189,8 @@ font-weight: lighter;
 
 .nome_profilo{
     width: 70%;
+    align-self: center;
+    margin-left: 15px;
 
 }
 .ora {
@@ -191,11 +202,8 @@ font-weight: lighter;
 .orario_msg {
     margin-top: 20px;
     color:lightgrey;
-    font-weight: lighter;
+
 }
-
-
-
 
 /* parte destra della app chat */
 .app_right {
@@ -213,23 +221,34 @@ font-weight: lighter;
     justify-content: space-between;
 }
 
-.app_right_top_Profilo {
-
-
+.app_right_fotoProfilo {
+    width: 10%;
     align-self: center;
     justify-content: flex-start;
 }
 
+.ultimo_accesso {
+    width: 60%;
+    align-self: center;
+
+}
+
 .img_profilo_chat {
-    width: 60px;
+    width: 70px;
     align-self: center;
     margin-left: 10px;
 
 }
 
-.nome_profilo, .accesso {
-    align-self: center;
-    margin-left: 10px;
+.nome_main {
+    font-weight: lighter;
+}
+
+
+.ultimo_accesso_main {
+    font-weight: lighter;
+    color:grey;
+
 
 }
 
@@ -252,7 +271,33 @@ font-weight: lighter;
     height: calc(100% - 160px);
     background-image: url("../img/sfondo.png");
     background-size: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }
+
+/* messaggi in chat */
+
+
+.right-messages {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.right-messages.active {
+  display: flex;
+}
+
+.message__user {
+  align-self: flex-start;
+  background-color: white;
+}
+
+
+
+
 
 .app_right_barraInput {
     width: 100%;

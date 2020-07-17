@@ -11,7 +11,6 @@
     <body>
 
 
-
             <div class="barra_retro_top"></div>
             <div class="sfondo_retro"></div>
             <div class="container_app">
@@ -21,9 +20,9 @@
                         <img id="img_profilo" src="img/avatar.png" alt="">
 
                         <div class="icone">
-                            <i class="cerchio fas fa-circle-notch"></i>
-                            <i class="messaggio fas fa-comment-alt"></i>
-                            <i class="puntini fas fa-ellipsis-v"></i>
+                            <a class="cerchio" href="#"><i class="fas fa-circle-notch"></i></a>
+                            <a class="messaggio" href="#"><i class="fas fa-comment-alt"></i></a>
+                            <a class="puntini "href="#"><i class=" fas fa-ellipsis-v"></i></a>
 
                         </div>
 
@@ -47,7 +46,7 @@
 
                     </div>
 
-                    <div class="contatto_chat">
+                    <div class="contatto_chat" data-chat="1">
                         <div class="foto_profilo">
                             <img class="profilo_1" src="img/avatar3.png" alt="">
                         </div>
@@ -62,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="contatto_chat">
+                    <div class="contatto_chat" data-chat="2">
 
                         <div class="foto_profilo">
                             <img class="profilo_1" src="img/avatar4.png" alt="">
@@ -79,7 +78,7 @@
 
                     </div>
 
-                    <div class="contatto_chat">
+                    <div class="contatto_chat" data-chat="3">
 
                         <div class="foto_profilo">
                             <img class="profilo_1" src="img/avatar5.png" alt="">
@@ -101,13 +100,14 @@
                 <div class="app_right">
                     <div class="app_right_top">
 
-                            <div class="app_right_top_Profilo">
+                            <div class="app_right_fotoProfilo">
                                 <img class="img_profilo_chat" src="img/avatar2.png" alt="">
-                                <!-- <h3 class="nome_profilo">Michele</h3>
-                                <p class="accesso">Ultimo accesso oggi all 15.40</p> -->
                             </div>
+                            <div class="ultimo_accesso">
+                                <h3 class="nome_main">Matteo</h3>
+                                <h5 class="ultimo_accesso_main">Ultimo accesso oggi alle 10.45</h5>
 
-
+                            </div>
 
 
                         <div class="icone_right">
@@ -121,11 +121,29 @@
 
                     <div class="app_sfondo">
 
+                        <div class="right-messages" data-chat="1">
+                          <div class="message__user">
+
+                            <span class="message_text">Marco, come stai?</span>
+                            <div class="message_time">
+                              <span>15:30</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="right-messages" data-chat="2">
+
+                        </div>
+                        <div class="right-messages" data-chat="3">
+
+                        </div>
+
                     </div>
+
 
                     <div class="app_right_barraInput">
                         <i class="smile far fa-smile"></i>
-                        <input id="barra_text" type="text" name="" value="" placeholder="Scrivi un messaggio">
+                        <input id="barra_text" class="input_message" type="text" name="" value="" placeholder="Scrivi un messaggio">
                         <i class="send fas fa-paper-plane"></i>
 
                     </div>
